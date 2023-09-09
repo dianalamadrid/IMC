@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -86,8 +89,13 @@ public class Imc_IU extends javax.swing.JFrame {
 
     private void btncalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncalcularActionPerformed
         // TODO add your handling code here:
+        double peso = Double.parseDouble(txtpeso.getText());
+        double altura = Double.parseDouble(txtaltura.getText());
         
+        double imc=(peso/altura)*altura;
         
+        JOptionPane.showMessageDialog(this, "El imc es: "+imc);
+
     }//GEN-LAST:event_btncalcularActionPerformed
 
     /**
